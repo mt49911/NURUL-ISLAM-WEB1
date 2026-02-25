@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>NURUL ISLAM - نور الإسلام</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo-area">
+            <img src="logo.jpg" alt="NURUL ISLAM" class="logo">
+            <span class="site-name">NURUL ISLAM</span>
+        </div>
+        <div class="top-bar-right">
+            <div class="language-selector">
+                <select id="langSelect">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </div>
+            <div class="notification-bell" id="notificationBell">
+                <i class="fas fa-bell"></i>
+                <span class="badge" id="notificationBadge">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Side Navigation -->
+    <div class="side-menu" id="sideMenu">
+        <a href="#" data-page="home" data-key="home"><i class="fas fa-home"></i> <span>Home</span></a>
+        <a href="#" data-page="tafseer" data-key="tafseer"><i class="fas fa-book-open"></i> <span>Tafseer</span></a>
+        <a href="#" data-page="hadith" data-key="hadith"><i class="fas fa-hadith"></i> <span>Hadith Reminder</span></a>
+        <a href="#" data-page="quran" data-key="quran"><i class="fas fa-quran"></i> <span>Quran Reminder</span></a>
+        <a href="#" data-page="motivation" data-key="motivation"><i class="fas fa-heart"></i> <span>Daily Motivation</span></a>
+        <a href="#" data-page="calendar" data-key="calendar"><i class="fas fa-calendar-alt"></i> <span>Islamic Calendar</span></a>
+        <a href="#" data-page="ramadan" data-key="ramadan"><i class="fas fa-moon"></i> <span>Ramadan Countdown</span></a>
+        <a href="#" data-page="about" data-key="about"><i class="fas fa-user"></i> <span>About</span></a>
+        <a href="#" data-page="contact" data-key="contact"><i class="fas fa-phone-alt"></i> <span>Contact</span></a>
+        <a href="admin.html" data-key="admin"><i class="fas fa-cog"></i> <span>Admin Dashboard</span></a>
+    </div>
+
+    <!-- Main Content Area (dynamic) -->
+    <main class="content" id="content">
+        <!-- Content loaded by JavaScript -->
+    </main>
+
+    <!-- AI Assistant Button -->
+    <div class="ai-assistant" id="aiBtn">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div id="aiModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3><i class="fas fa-robot"></i> Islamic AI Assistant</h3>
+            <div id="chatMessages" class="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Ask about Islam..." />
+                <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="logo.jpg" alt="Logo" class="footer-logo">
+        <p>Created and hosted by Abdullahi Muhammad Tuku</p>
+        <p>&copy; 2025 NURUL ISLAM. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://wa.me/2349020899102" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:emteeydigitalservice11@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
